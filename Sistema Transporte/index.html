@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Produtos</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main >
+
+        <section class="dadosEntra">
+
+            <div class="depth-effect">
+                <h1>Transporte</h1>
+            </div>
+
+            <div class="dados">
+                <label for="text" class="depth-label">Local de entrega </label>
+                <input type="text" value="">
+                <br><br>
+                <label for="text" class="depth-label">Cidade</label> 
+                <input type="text" value="" >
+               <br><br>
+                <label for="text" class="depth-label">Cobrança</label> 
+                <input type="number" value="0" >
+               </div>
+
+               <div class="btn">
+                <button id="Enviar" onclick="enviar()">Enviar</button>
+               </div>
+        </section>
+
+        <br>
+
+        <table class="table2">
+            <thead>
+                <tr>
+                    <th>Tabela de precos do produtos</th>
+                </tr>
+            </thead>
+        </table>
+<br>
+
+        <table class="table3">
+            <thead>
+                <tr>
+                    <th>Imagem</th>
+                    <th>Cód. Produto</th>
+                    <th>Descrição</th>
+                    <th>Quantidade</th>
+                    <th>Unit. Base</th>
+                    <th>Imposto</th>
+                    <th>Unit. Final</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                   
+                    <td>
+                        <img id="imagem-produto-1" src="./img/360_F_481134373_0W4kg2yKeBRHNEklk4F9UXtGHdub3tYk-removebg-preview.png" alt="Imagem do Produto" style="cursor: pointer;">
+                        <input type="file" id="input-file-1" style="display: none;">
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="text" value="Descrição do Produto"></td>
+                    <td><input type="number" value="0" class="quantidade"></td>
+                    <td><input type="number" value="0.00" class="unit-base"></td>
+                    <td><input type="number" value="0.00" class="imposto"></td>
+                    <td><input type="number" value="0.00" class="unit-final" readonly></td>
+                    <td><input type="number" value="0.00" class="total" readonly></td>
+                    
+                </tr>
+                
+              
+            </tbody>
+
+            <tbody>
+                <tr>
+                    
+                    <td>
+                        <img id="imagem-produto-2" src="./img/360_F_481134373_0W4kg2yKeBRHNEklk4F9UXtGHdub3tYk-removebg-preview.png" alt="Imagem do Produto" style="cursor: pointer;">
+                        <input type="file" id="input-file-2" style="display: none;">
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="text" value="Descrição do Produto"></td>
+                    <td><input type="number" value="0" class="quantidade"></td>
+                    <td><input type="number" value="0.00" class="unit-base"></td>
+                    <td><input type="number" value="0.00" class="imposto"></td>
+                    <td><input type="number" value="0.00" class="unit-final" readonly></td>
+                    <td><input type="number" value="0.00" class="total" readonly></td>
+                    
+                </tr>
+                
+                
+            </tbody>
+
+             <tbody>
+                <tr>
+                    <td>
+                        <img id="imagem-produto-3" src="./img/360_F_481134373_0W4kg2yKeBRHNEklk4F9UXtGHdub3tYk-removebg-preview.png" alt="Imagem do Produto" style="cursor: pointer;">
+                        <input type="file" id="input-file-3" style="display: none;">
+                    </td>
+                    
+                    <td><input type="number"></td>
+                    <td><input type="text" value="Descrição do Produto"></td>
+                    <td><input type="number" value="0" class="quantidade"></td>
+                    <td><input type="number" value="0.00" class="unit-base"></td>
+                    <td><input type="number" value="0.00" class="imposto"></td>
+                    <td><input type="number" value="0.00" class="unit-final" readonly></td>
+                    <td><input type="number" value="0.00" class="total" readonly></td>
+                    
+                </tr>
+                
+               
+            </tbody>
+             <tbody>
+                <tr>
+                    
+                    <td>
+                        <img id="imagem-produto-4" src="./img/360_F_481134373_0W4kg2yKeBRHNEklk4F9UXtGHdub3tYk-removebg-preview.png" alt="Imagem do Produto" style="cursor: pointer;">
+                        <input type="file" id="input-file-4" style="display: none;">
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="text" value="Descrição do Produto"></td>
+                    <td><input type="number" value="0" class="quantidade"></td>
+                    <td><input type="number" value="0.00" class="unit-base"></td>
+                    <td><input type="number" value="0.00" class="imposto"></td>
+                    <td><input type="number" value="0.00" class="unit-final" readonly></td>
+                    <td><input type="number" value="0.00" class="total" readonly></td>
+                    
+                </tr>
+                
+                
+            </tbody>
+            <tbody>
+                <tr>
+                    
+                    <td>
+                        <img id="imagem-produto-5" src="./img/360_F_481134373_0W4kg2yKeBRHNEklk4F9UXtGHdub3tYk-removebg-preview.png" alt="Imagem do Produto" style="cursor: pointer;">
+                        <input type="file" id="input-file-5" style="display: none;">
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="text" value="Descrição do Produto"></td>
+                    <td><input type="number" value="0" class="quantidade"></td>
+                    <td><input type="number" value="0.00" class="unit-base"></td>
+                    <td><input type="number" value="0.00" class="imposto"></td>
+                    <td><input type="number" value="0.00" class="unit-final" readonly></td>
+                    <td><input type="number" value="0.00" class="total" readonly></td>
+                    
+                </tr>
+                
+              
+            </tbody>
+            <tbody>
+                <tr>
+                  
+                    <td>
+                        <img id="imagem-produto-6" src="./img/360_F_481134373_0W4kg2yKeBRHNEklk4F9UXtGHdub3tYk-removebg-preview.png" alt="Imagem do Produto" style="cursor: pointer;">
+                        <input type="file" id="input-file-6" style="display: none;">
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="text" value="Descrição do Produto"></td>
+                    <td><input type="number" value="0" class="quantidade"></td>
+                    <td><input type="number" value="0.00" class="unit-base"></td>
+                    <td><input type="number" value="0.00" class="imposto"></td>
+                    <td><input type="number" value="0.00" class="unit-final" readonly></td>
+                    <td><input type="number" value="0.00" class="total" readonly></td>
+                    
+                </tr>
+                
+                
+            </tbody>    
+            <!-- <tbody>
+                <tr>
+                    <td>
+                        <img id="imagem-produto-7" src="./img/360_F_481134373_0W4kg2yKeBRHNEklk4F9UXtGHdub3tYk-removebg-preview.png" alt="Imagem do Produto" style="cursor: pointer;">
+                        <input type="file" id="input-file-7" style="display: none;">
+                    </td>
+                    
+                    <td><input type="number"></td>
+                    <td><input type="text" value="Descrição do Produto"></td>
+                    <td><input type="number" value="1" class="quantidade"></td>
+                    <td><input type="number" value="10.00" class="unit-base"></td>
+                    <td><input type="number" value="1.50" class="imposto"></td>
+                    <td><input type="number" value="11.50" class="unit-final" readonly></td>
+                    <td><input type="number" value="11.50" class="total" readonly></td>
+                    
+                </tr>
+                
+               
+            </tbody>    
+            <tbody>
+                <tr>
+                    
+                    <td>
+                        <img id="imagem-produto-8" src="./img/360_F_481134373_0W4kg2yKeBRHNEklk4F9UXtGHdub3tYk-removebg-preview.png" alt="Imagem do Produto" style="cursor: pointer;">
+                        <input type="file" id="input-file-8" style="display: none;">
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="text" value="Descrição do Produto"></td>
+                    <td><input type="number" value="1" class="quantidade"></td>
+                    <td><input type="number" value="10.00" class="unit-base"></td>
+                    <td><input type="number" value="1.50" class="imposto"></td>
+                    <td><input type="number" value="11.50" class="unit-final" readonly></td>
+                    <td><input type="number" value="11.50" class="total" readonly></td>
+                    
+                </tr>
+                
+                
+            </tbody>    
+            <tbody>
+                <tr>
+                    
+                    <td>
+                        <img id="imagem-produto-9" src="./img/360_F_481134373_0W4kg2yKeBRHNEklk4F9UXtGHdub3tYk-removebg-preview.png" alt="Imagem do Produto" style="cursor: pointer;">
+                        <input type="file" id="input-file-9" style="display: none;">
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="text" value="Descrição do Produto"></td>
+                    <td><input type="number" value="1" class="quantidade"></td>
+                    <td><input type="number" value="10.00" class="unit-base"></td>
+                    <td><input type="number" value="1.50" class="imposto"></td>
+                    <td><input type="number" value="11.50" class="unit-final" readonly></td>
+                    <td><input type="number" value="11.50" class="total" readonly></td>
+                    
+                </tr>
+                
+                
+            </tbody>  
+            <tbody>
+                <tr>
+                    <td>
+                        <img id="imagem-produto-10" src="./img/360_F_481134373_0W4kg2yKeBRHNEklk4F9UXtGHdub3tYk-removebg-preview.png" alt="Imagem do Produto" style="cursor: pointer;">
+                        <input type="file" id="input-file-10" style="display: none;">
+                    </td>
+                    <td><input type="number"></td>
+                    <td><input type="text" value="Descrição do Produto"></td>
+                    <td><input type="number" value="1" class="quantidade"></td>
+                    <td><input type="number" value="10.00" class="unit-base"></td>
+                    <td><input type="number" value="1.50" class="imposto"></td>
+                    <td><input type="number" value="11.50" class="unit-final" readonly></td>
+                    <td><input type="number" value="11.50" class="total" readonly></td>
+                    
+                </tr>   
+                
+            </tbody>    -->
+           
+        </table>
+
+        </table>
+        
+
+    </main>
+    <div class="btn">
+        <button id="calcular" onclick="calcularValores()">Calcular</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
